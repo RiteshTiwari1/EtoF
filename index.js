@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
@@ -36,6 +36,6 @@ app.post('/translate', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${port}`);
 });
