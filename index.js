@@ -37,5 +37,5 @@ app.post('/translate', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running at http://localhost:${port}`);
+    console.log(`Server is running at http://localhost:${PORT}`);
 });
